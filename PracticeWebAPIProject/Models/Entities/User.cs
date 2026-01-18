@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace PracticeWebAPIProject.Models;
 
 public class User : BaseEntity
@@ -6,4 +8,6 @@ public class User : BaseEntity
     public string Email { get; set; } = "example@gmail.com";
     
     public List<Post> Posts { get; set; } = new();
+    
+    public List<Role> Roles { get; set; } = new();
 }
